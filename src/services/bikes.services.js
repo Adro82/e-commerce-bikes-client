@@ -12,6 +12,10 @@ class BikeService {
         return this.api.get("/getAllBikes")
     }
 
+    getOneBike(bike_id) {
+        return this.api.get(`/getBike/${bike_id}`)
+    }
+
     createBikes(bikeData) {
         return this.api.post('/addBike', bikeData)
     }
