@@ -16,6 +16,9 @@ const Navigation = () => {
                         <Link to="/gallery">
                             <Nav.Link as="span">Bikes</Nav.Link>
                         </Link>
+                        <Link to="/create">
+                            <Nav.Link as="span">Add Bike</Nav.Link>
+                        </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

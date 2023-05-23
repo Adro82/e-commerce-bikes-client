@@ -13,7 +13,7 @@ const BikeDetailsPage = () => {
             .getOneBike(bike_id)
             .then(({ data }) => setBike(data))
             .catch(err => console.error(err))
-    }, [])
+    }, [bike_id])
     return (
         <Container>
 
