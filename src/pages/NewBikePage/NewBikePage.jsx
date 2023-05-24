@@ -4,11 +4,14 @@ import NewBikeForm from "../../components/NewBikeForm/NewBikeForm"
 const NewBikePage = () => {
 
     return (
+
         <Container>
             <h1>Hy New Bike</h1>
             <hr />
             <NewBikeForm />
         </Container>
+
+
     )
 }
 
