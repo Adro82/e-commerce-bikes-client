@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Button, Col, Form, Row } from "react-bootstrap"
 import bikeService from "../../services/bikes.services"
 
-const NewBikeForm = () => {
+const NewBikeForm = ({ setShowModal }) => {
 
     const [bikeData, setbikeData] = useState({
         brand: '',
@@ -22,7 +22,7 @@ const NewBikeForm = () => {
 
         bikeService
             .createBikes(bikeData)
-            .then(({ data }) => console.log(data))
+            .then(({ data }) => setShowModal(false))
             .catch(err => console.log(err))
     }
 

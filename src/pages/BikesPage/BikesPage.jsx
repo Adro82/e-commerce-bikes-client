@@ -5,7 +5,7 @@ import NewBikeForm from "../../components/NewBikeForm/NewBikeForm"
 
 
 const BikesListPage = () => {
-    const [showModal, setShowModal] = useState(true)
+    const [showModal, setShowModal] = useState(false)
 
     return (
         <>
@@ -22,7 +22,7 @@ const BikesListPage = () => {
                     <Modal.Title>New Bike</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <NewBikeForm />
+                    <NewBikeForm setShowModal={setShowModal} />
                 </Modal.Body>
             </Modal>
         </>
