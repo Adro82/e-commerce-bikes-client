@@ -57,6 +57,7 @@ const NewBikeForm = ({ setShowModal }) => {
                 </Form.Group>
             </Row>
             <Button variant="dark" type="submit"> Add Bike </Button>
+            <Button variant="dark" type="submit"> Add Bike </Button>
         </Form>
     )
 }
